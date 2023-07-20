@@ -1,0 +1,893 @@
+2023-07-20T02:27:17.207-04:00  INFO 48036 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 48036 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T02:27:17.212-04:00  INFO 48036 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T02:27:17.321-04:00  INFO 48036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T02:27:17.321-04:00  INFO 48036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T02:27:18.972-04:00  INFO 48036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T02:27:19.054-04:00  INFO 48036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2023-07-20T02:27:19.852-04:00  INFO 48036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T02:27:19.866-04:00  INFO 48036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T02:27:19.866-04:00  INFO 48036 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T02:27:19.942-04:00  INFO 48036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T02:27:19.942-04:00  INFO 48036 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2619 ms
+2023-07-20T02:27:20.027-04:00  INFO 48036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T02:27:20.126-04:00  INFO 48036 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T02:27:20.129-04:00  INFO 48036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T02:27:20.162-04:00  INFO 48036 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T02:27:20.349-04:00  INFO 48036 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T02:27:20.388-04:00  INFO 48036 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T02:27:20.390-04:00  INFO 48036 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T02:27:20.479-04:00  INFO 48036 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T02:27:20.543-04:00  INFO 48036 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T02:27:20.717-04:00  INFO 48036 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T02:27:21.126-04:00  INFO 48036 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T02:27:21.203-04:00  INFO 48036 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T02:27:21.659-04:00  WARN 48036 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T02:27:21.843-04:00  INFO 48036 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T02:27:22.161-04:00  INFO 48036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T02:27:22.212-04:00  INFO 48036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T02:27:22.242-04:00  INFO 48036 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 6.027 seconds (process running for 7.494)
+2023-07-20T02:27:30.141-04:00  INFO 48036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T02:27:30.144-04:00  INFO 48036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T02:27:30.148-04:00  INFO 48036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-07-20T02:28:57.730-04:00  INFO 48036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T02:28:58.108-04:00  WARN 48036 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T02:28:58.109-04:00  INFO 48036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T02:28:58.241-04:00  INFO 48036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T02:29:04.637-04:00  INFO 48062 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 48062 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T02:29:04.640-04:00  INFO 48062 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T02:29:04.698-04:00  INFO 48062 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T02:29:04.698-04:00  INFO 48062 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T02:29:05.626-04:00  INFO 48062 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T02:29:05.695-04:00  INFO 48062 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2023-07-20T02:29:06.341-04:00  INFO 48062 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T02:29:06.349-04:00  INFO 48062 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T02:29:06.350-04:00  INFO 48062 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T02:29:06.403-04:00  INFO 48062 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T02:29:06.403-04:00  INFO 48062 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1704 ms
+2023-07-20T02:29:06.452-04:00  INFO 48062 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T02:29:06.519-04:00  INFO 48062 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T02:29:06.520-04:00  INFO 48062 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T02:29:06.534-04:00  INFO 48062 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T02:29:06.680-04:00  INFO 48062 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T02:29:06.707-04:00  INFO 48062 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T02:29:06.709-04:00  INFO 48062 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T02:29:06.781-04:00  INFO 48062 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T02:29:06.829-04:00  INFO 48062 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T02:29:06.963-04:00  INFO 48062 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T02:29:07.350-04:00  INFO 48062 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T02:29:07.401-04:00  INFO 48062 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T02:29:07.758-04:00  WARN 48062 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T02:29:07.883-04:00  INFO 48062 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T02:29:08.112-04:00  INFO 48062 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T02:29:08.151-04:00  INFO 48062 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T02:29:08.173-04:00  INFO 48062 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.169 seconds (process running for 5.392)
+2023-07-20T02:29:19.165-04:00  INFO 48062 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T02:29:19.167-04:00  INFO 48062 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T02:29:19.170-04:00  INFO 48062 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T03:05:45.140-04:00  INFO 48062 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T03:05:45.388-04:00  WARN 48062 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T03:05:45.389-04:00  INFO 48062 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T03:05:45.518-04:00  INFO 48062 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T03:05:52.680-04:00  INFO 48411 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 48411 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T03:05:52.684-04:00  INFO 48411 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T03:05:52.749-04:00  INFO 48411 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T03:05:52.749-04:00  INFO 48411 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T03:05:53.600-04:00  INFO 48411 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T03:05:53.666-04:00  INFO 48411 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2023-07-20T03:05:54.243-04:00  INFO 48411 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T03:05:54.250-04:00  INFO 48411 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T03:05:54.251-04:00  INFO 48411 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T03:05:54.306-04:00  INFO 48411 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T03:05:54.306-04:00  INFO 48411 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1557 ms
+2023-07-20T03:05:54.353-04:00  INFO 48411 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T03:05:54.423-04:00  INFO 48411 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T03:05:54.424-04:00  INFO 48411 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T03:05:54.438-04:00  INFO 48411 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T03:05:54.602-04:00  INFO 48411 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T03:05:54.629-04:00  INFO 48411 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T03:05:54.631-04:00  INFO 48411 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T03:05:54.700-04:00  INFO 48411 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T03:05:54.750-04:00  INFO 48411 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T03:05:54.872-04:00  INFO 48411 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T03:05:55.191-04:00  INFO 48411 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T03:05:55.301-04:00  INFO 48411 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T03:05:55.674-04:00  WARN 48411 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T03:05:55.871-04:00  INFO 48411 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T03:05:56.037-04:00  INFO 48411 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T03:05:56.076-04:00  INFO 48411 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T03:05:56.098-04:00  INFO 48411 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.019 seconds (process running for 5.029)
+2023-07-20T03:06:06.884-04:00  INFO 48411 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T03:06:06.885-04:00  INFO 48411 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T03:06:06.888-04:00  INFO 48411 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T03:07:59.486-04:00  INFO 48411 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T03:07:59.873-04:00  WARN 48411 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T03:07:59.874-04:00  INFO 48411 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T03:08:00.004-04:00  INFO 48411 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T03:08:14.457-04:00  INFO 48432 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 48432 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T03:08:14.461-04:00  INFO 48432 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T03:08:14.523-04:00  INFO 48432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T03:08:14.523-04:00  INFO 48432 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T03:08:15.259-04:00  INFO 48432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T03:08:15.347-04:00  INFO 48432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2023-07-20T03:08:16.034-04:00  INFO 48432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T03:08:16.041-04:00  INFO 48432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T03:08:16.042-04:00  INFO 48432 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T03:08:16.105-04:00  INFO 48432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T03:08:16.105-04:00  INFO 48432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1582 ms
+2023-07-20T03:08:16.158-04:00  INFO 48432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T03:08:16.217-04:00  INFO 48432 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T03:08:16.219-04:00  INFO 48432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T03:08:16.233-04:00  INFO 48432 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T03:08:16.356-04:00  INFO 48432 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T03:08:16.387-04:00  INFO 48432 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T03:08:16.389-04:00  INFO 48432 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T03:08:16.503-04:00  INFO 48432 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T03:08:16.562-04:00  INFO 48432 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T03:08:16.689-04:00  INFO 48432 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T03:08:16.999-04:00  INFO 48432 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T03:08:17.052-04:00  INFO 48432 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T03:08:17.426-04:00  WARN 48432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T03:08:17.620-04:00  INFO 48432 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T03:08:17.762-04:00  INFO 48432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T03:08:17.798-04:00  INFO 48432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T03:08:17.818-04:00  INFO 48432 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.062 seconds (process running for 5.057)
+2023-07-20T03:08:42.678-04:00  INFO 48432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T03:08:42.680-04:00  INFO 48432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T03:08:42.685-04:00  INFO 48432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-07-20T03:12:44.511-04:00  INFO 48432 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T03:12:44.888-04:00  WARN 48432 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T03:12:44.889-04:00  INFO 48432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T03:12:45.018-04:00  INFO 48432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T03:28:24.041-04:00  INFO 48689 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 48689 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T03:28:24.050-04:00  INFO 48689 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T03:28:24.218-04:00  INFO 48689 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T03:28:24.218-04:00  INFO 48689 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T03:28:25.476-04:00  INFO 48689 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T03:28:25.567-04:00  INFO 48689 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2023-07-20T03:28:26.435-04:00  INFO 48689 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T03:28:26.451-04:00  INFO 48689 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T03:28:26.452-04:00  INFO 48689 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T03:28:26.529-04:00  INFO 48689 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T03:28:26.530-04:00  INFO 48689 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2311 ms
+2023-07-20T03:28:26.602-04:00  INFO 48689 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T03:28:26.703-04:00  INFO 48689 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T03:28:26.705-04:00  INFO 48689 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T03:28:26.721-04:00  INFO 48689 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T03:28:26.882-04:00  INFO 48689 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T03:28:26.918-04:00  INFO 48689 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T03:28:26.920-04:00  INFO 48689 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T03:28:27.010-04:00  INFO 48689 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T03:28:27.078-04:00  INFO 48689 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T03:28:27.227-04:00  INFO 48689 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T03:28:27.698-04:00  INFO 48689 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T03:28:27.785-04:00  INFO 48689 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T03:28:28.297-04:00  WARN 48689 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T03:28:28.523-04:00  INFO 48689 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T03:28:28.721-04:00  INFO 48689 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T03:28:28.787-04:00  INFO 48689 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T03:28:28.810-04:00  INFO 48689 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 6.159 seconds (process running for 7.638)
+2023-07-20T03:28:39.176-04:00  INFO 48689 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T03:28:39.558-04:00  WARN 48689 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T03:28:39.559-04:00  INFO 48689 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T03:28:39.692-04:00  INFO 48689 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T14:52:54.694-04:00  INFO 49617 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 49617 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T14:52:54.700-04:00  INFO 49617 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T14:52:54.835-04:00  INFO 49617 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T14:52:54.835-04:00  INFO 49617 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T14:52:56.500-04:00  INFO 49617 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T14:52:56.568-04:00  INFO 49617 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2023-07-20T14:52:57.360-04:00  INFO 49617 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T14:52:57.374-04:00  INFO 49617 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T14:52:57.375-04:00  INFO 49617 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T14:52:57.456-04:00  INFO 49617 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T14:52:57.457-04:00  INFO 49617 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2620 ms
+2023-07-20T14:52:57.516-04:00  INFO 49617 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T14:52:57.610-04:00  INFO 49617 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T14:52:57.613-04:00  INFO 49617 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T14:52:57.632-04:00  INFO 49617 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T14:52:57.777-04:00  INFO 49617 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T14:52:57.814-04:00  INFO 49617 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T14:52:57.817-04:00  INFO 49617 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T14:52:57.921-04:00  INFO 49617 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T14:52:57.971-04:00  INFO 49617 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T14:52:58.112-04:00  INFO 49617 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T14:52:58.466-04:00  INFO 49617 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T14:52:58.539-04:00  INFO 49617 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T14:52:58.954-04:00  WARN 49617 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T14:52:59.210-04:00  INFO 49617 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T14:52:59.357-04:00  INFO 49617 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T14:52:59.396-04:00  INFO 49617 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T14:52:59.418-04:00  INFO 49617 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.733 seconds (process running for 7.059)
+2023-07-20T14:53:06.585-04:00  INFO 49617 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T14:53:06.588-04:00  INFO 49617 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T14:53:06.592-04:00  INFO 49617 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-07-20T14:57:17.608-04:00  INFO 49617 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T14:57:17.978-04:00  WARN 49617 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T14:57:17.979-04:00  INFO 49617 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T14:57:18.112-04:00  INFO 49617 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T15:12:55.434-04:00  INFO 49903 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 49903 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T15:12:55.439-04:00  INFO 49903 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T15:12:55.535-04:00  INFO 49903 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T15:12:55.535-04:00  INFO 49903 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T15:12:56.573-04:00  INFO 49903 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T15:12:56.669-04:00  INFO 49903 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 2 JPA repository interfaces.
+2023-07-20T15:12:57.441-04:00  INFO 49903 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T15:12:57.455-04:00  INFO 49903 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T15:12:57.456-04:00  INFO 49903 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T15:12:57.518-04:00  INFO 49903 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T15:12:57.519-04:00  INFO 49903 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1981 ms
+2023-07-20T15:12:57.582-04:00  INFO 49903 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T15:12:57.667-04:00  INFO 49903 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T15:12:57.669-04:00  INFO 49903 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T15:12:57.686-04:00  INFO 49903 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T15:12:57.830-04:00  INFO 49903 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T15:12:57.872-04:00  INFO 49903 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T15:12:57.876-04:00  INFO 49903 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T15:12:57.960-04:00  INFO 49903 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T15:12:58.033-04:00  INFO 49903 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T15:12:58.177-04:00  INFO 49903 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T15:12:58.528-04:00  INFO 49903 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T15:12:58.590-04:00  INFO 49903 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T15:12:58.956-04:00  WARN 49903 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T15:12:59.314-04:00  INFO 49903 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T15:12:59.363-04:00  INFO 49903 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T15:12:59.379-04:00  INFO 49903 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.007 seconds (process running for 6.073)
+2023-07-20T15:13:07.837-04:00  INFO 49903 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T15:13:07.841-04:00  INFO 49903 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T15:13:07.845-04:00  INFO 49903 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T15:16:28.838-04:00  INFO 49903 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T15:16:29.195-04:00  WARN 49903 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T15:16:29.196-04:00  INFO 49903 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T15:16:29.337-04:00  INFO 49903 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T15:16:34.680-04:00  INFO 49980 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 49980 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T15:16:34.683-04:00  INFO 49980 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T15:16:34.787-04:00  INFO 49980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T15:16:34.787-04:00  INFO 49980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T15:16:35.664-04:00  INFO 49980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T15:16:35.739-04:00  INFO 49980 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2023-07-20T15:16:36.581-04:00  INFO 49980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T15:16:36.591-04:00  INFO 49980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T15:16:36.591-04:00  INFO 49980 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T15:16:36.649-04:00  INFO 49980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T15:16:36.649-04:00  INFO 49980 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1862 ms
+2023-07-20T15:16:36.776-04:00  INFO 49980 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T15:16:36.861-04:00  INFO 49980 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T15:16:36.862-04:00  INFO 49980 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T15:16:36.879-04:00  INFO 49980 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T15:16:37.035-04:00  INFO 49980 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T15:16:37.062-04:00  INFO 49980 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T15:16:37.064-04:00  INFO 49980 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T15:16:37.182-04:00  INFO 49980 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T15:16:37.242-04:00  INFO 49980 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T15:16:37.375-04:00  INFO 49980 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T15:16:37.976-04:00  INFO 49980 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T15:16:38.045-04:00  INFO 49980 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T15:16:38.543-04:00  WARN 49980 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T15:16:39.042-04:00  INFO 49980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T15:16:39.088-04:00  INFO 49980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T15:16:39.103-04:00  INFO 49980 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.095 seconds (process running for 6.355)
+2023-07-20T15:16:42.481-04:00  INFO 49980 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T15:16:42.482-04:00  INFO 49980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T15:16:42.486-04:00  INFO 49980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T15:16:56.806-04:00  INFO 49980 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T15:16:57.188-04:00  WARN 49980 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T15:16:57.189-04:00  INFO 49980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T15:16:57.316-04:00  INFO 49980 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T15:17:03.062-04:00  INFO 49987 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 49987 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T15:17:03.069-04:00  INFO 49987 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T15:17:03.129-04:00  INFO 49987 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T15:17:03.129-04:00  INFO 49987 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T15:17:03.984-04:00  INFO 49987 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T15:17:04.088-04:00  INFO 49987 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2023-07-20T15:17:04.848-04:00  INFO 49987 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T15:17:04.870-04:00  INFO 49987 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T15:17:04.871-04:00  INFO 49987 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T15:17:04.935-04:00  INFO 49987 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T15:17:04.936-04:00  INFO 49987 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1804 ms
+2023-07-20T15:17:04.988-04:00  INFO 49987 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T15:17:05.061-04:00  INFO 49987 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T15:17:05.063-04:00  INFO 49987 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T15:17:05.079-04:00  INFO 49987 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T15:17:05.187-04:00  INFO 49987 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T15:17:05.210-04:00  INFO 49987 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T15:17:05.212-04:00  INFO 49987 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T15:17:05.276-04:00  INFO 49987 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T15:17:05.324-04:00  INFO 49987 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T15:17:05.438-04:00  INFO 49987 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T15:17:05.753-04:00  INFO 49987 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T15:17:05.814-04:00  INFO 49987 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T15:17:06.205-04:00  WARN 49987 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T15:17:06.541-04:00  INFO 49987 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T15:17:06.588-04:00  INFO 49987 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T15:17:06.605-04:00  INFO 49987 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.524 seconds (process running for 5.927)
+2023-07-20T15:17:09.581-04:00  INFO 49987 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T15:17:09.582-04:00  INFO 49987 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T15:17:09.585-04:00  INFO 49987 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T15:18:24.358-04:00  INFO 49987 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T15:18:24.715-04:00  WARN 49987 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T15:18:24.716-04:00  INFO 49987 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T15:18:24.845-04:00  INFO 49987 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T15:18:29.288-04:00  INFO 49994 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 49994 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T15:18:29.292-04:00  INFO 49994 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T15:18:29.389-04:00  INFO 49994 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T15:18:29.389-04:00  INFO 49994 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T15:18:30.415-04:00  INFO 49994 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T15:18:30.486-04:00  INFO 49994 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2023-07-20T15:18:31.122-04:00  INFO 49994 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T15:18:31.129-04:00  INFO 49994 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T15:18:31.130-04:00  INFO 49994 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T15:18:31.187-04:00  INFO 49994 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T15:18:31.187-04:00  INFO 49994 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1797 ms
+2023-07-20T15:18:31.237-04:00  INFO 49994 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T15:18:31.301-04:00  INFO 49994 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T15:18:31.303-04:00  INFO 49994 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T15:18:31.324-04:00  INFO 49994 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T15:18:31.459-04:00  INFO 49994 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T15:18:31.484-04:00  INFO 49994 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T15:18:31.486-04:00  INFO 49994 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T15:18:31.547-04:00  INFO 49994 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T15:18:31.593-04:00  INFO 49994 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T15:18:31.716-04:00  INFO 49994 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T15:18:32.049-04:00  INFO 49994 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T15:18:32.104-04:00  INFO 49994 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T15:18:32.464-04:00  WARN 49994 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T15:18:32.794-04:00  INFO 49994 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T15:18:32.835-04:00  INFO 49994 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T15:18:32.848-04:00  INFO 49994 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.337 seconds (process running for 5.384)
+2023-07-20T15:18:38.730-04:00  INFO 49994 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T15:18:38.731-04:00  INFO 49994 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T15:18:38.736-04:00  INFO 49994 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-07-20T15:20:43.145-04:00  INFO 49994 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T15:20:43.540-04:00  WARN 49994 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T15:20:43.547-04:00  INFO 49994 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T15:20:43.685-04:00  INFO 49994 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:02:21.357-04:00  INFO 50462 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50462 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:02:21.368-04:00  INFO 50462 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:02:21.478-04:00  INFO 50462 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:02:21.478-04:00  INFO 50462 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:02:22.448-04:00  INFO 50462 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:02:22.518-04:00  INFO 50462 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:02:23.344-04:00  INFO 50462 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:02:23.370-04:00  INFO 50462 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:02:23.371-04:00  INFO 50462 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:02:23.447-04:00  INFO 50462 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:02:23.447-04:00  INFO 50462 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1968 ms
+2023-07-20T16:02:23.542-04:00  INFO 50462 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:02:23.626-04:00  INFO 50462 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:02:23.628-04:00  INFO 50462 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:02:23.647-04:00  INFO 50462 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:02:23.800-04:00  INFO 50462 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:02:23.855-04:00  INFO 50462 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:02:24.126-04:00  INFO 50462 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:02:24.270-04:00  INFO 50462 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:02:24.350-04:00  INFO 50462 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:02:24.564-04:00  INFO 50462 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:02:25.053-04:00  INFO 50462 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:02:25.122-04:00  INFO 50462 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:02:25.545-04:00  WARN 50462 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:02:25.955-04:00  INFO 50462 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:02:25.998-04:00  INFO 50462 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:02:26.017-04:00  INFO 50462 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.841 seconds (process running for 6.878)
+2023-07-20T16:02:33.832-04:00  INFO 50462 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:02:33.834-04:00  INFO 50462 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:02:33.839-04:00  INFO 50462 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-07-20T16:05:30.027-04:00  INFO 50462 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:05:30.394-04:00  WARN 50462 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:05:30.394-04:00  INFO 50462 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:05:30.519-04:00  INFO 50462 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:05:36.431-04:00  INFO 50480 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50480 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:05:36.436-04:00  INFO 50480 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:05:36.511-04:00  INFO 50480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:05:36.511-04:00  INFO 50480 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:05:37.343-04:00  INFO 50480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:05:37.407-04:00  INFO 50480 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:05:38.056-04:00  INFO 50480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:05:38.066-04:00  INFO 50480 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:05:38.066-04:00  INFO 50480 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:05:38.121-04:00  INFO 50480 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:05:38.122-04:00  INFO 50480 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1609 ms
+2023-07-20T16:05:38.169-04:00  INFO 50480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:05:38.230-04:00  INFO 50480 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:05:38.231-04:00  INFO 50480 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:05:38.251-04:00  INFO 50480 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:05:38.369-04:00  INFO 50480 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:05:38.396-04:00  INFO 50480 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:05:38.398-04:00  INFO 50480 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:05:38.461-04:00  INFO 50480 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:05:38.511-04:00  INFO 50480 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:05:38.634-04:00  INFO 50480 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:05:38.964-04:00  INFO 50480 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:05:39.014-04:00  INFO 50480 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:05:39.460-04:00  WARN 50480 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:05:39.751-04:00  INFO 50480 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:05:39.786-04:00  INFO 50480 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:05:39.807-04:00  INFO 50480 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.094 seconds (process running for 5.181)
+2023-07-20T16:06:07.024-04:00  INFO 50480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:06:07.026-04:00  INFO 50480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:06:07.032-04:00  INFO 50480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-07-20T16:06:19.504-04:00  INFO 50480 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:06:19.878-04:00  WARN 50480 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:06:19.879-04:00  INFO 50480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:06:20.006-04:00  INFO 50480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:07:40.409-04:00  INFO 50502 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50502 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:07:40.420-04:00  INFO 50502 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:07:40.537-04:00  INFO 50502 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:07:40.537-04:00  INFO 50502 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:07:41.684-04:00  INFO 50502 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:07:41.757-04:00  INFO 50502 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:07:42.522-04:00  INFO 50502 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:07:42.531-04:00  INFO 50502 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:07:42.532-04:00  INFO 50502 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:07:42.587-04:00  INFO 50502 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:07:42.587-04:00  INFO 50502 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2049 ms
+2023-07-20T16:07:42.668-04:00  INFO 50502 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:07:42.754-04:00  INFO 50502 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:07:42.757-04:00  INFO 50502 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:07:42.779-04:00  INFO 50502 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:07:42.908-04:00  INFO 50502 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:07:42.939-04:00  INFO 50502 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:07:42.942-04:00  INFO 50502 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:07:43.023-04:00  INFO 50502 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:07:43.074-04:00  INFO 50502 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:07:43.225-04:00  INFO 50502 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:07:43.578-04:00  INFO 50502 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:07:43.651-04:00  INFO 50502 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:07:44.020-04:00  WARN 50502 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:07:44.391-04:00  INFO 50502 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:07:44.429-04:00  INFO 50502 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:07:44.444-04:00  INFO 50502 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.888 seconds (process running for 6.128)
+2023-07-20T16:07:48.694-04:00  INFO 50502 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:07:48.695-04:00  INFO 50502 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:07:48.703-04:00  INFO 50502 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-07-20T16:09:30.937-04:00  INFO 50502 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:09:31.308-04:00  WARN 50502 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:09:31.309-04:00  INFO 50502 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:09:31.439-04:00  INFO 50502 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:09:41.577-04:00  INFO 50547 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50547 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:09:41.581-04:00  INFO 50547 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:09:41.655-04:00  INFO 50547 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:09:41.656-04:00  INFO 50547 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:09:42.860-04:00  INFO 50547 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:09:42.981-04:00  INFO 50547 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:09:43.938-04:00  INFO 50547 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:09:43.955-04:00  INFO 50547 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:09:43.956-04:00  INFO 50547 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:09:44.068-04:00  INFO 50547 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:09:44.069-04:00  INFO 50547 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2412 ms
+2023-07-20T16:09:44.177-04:00  INFO 50547 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:09:44.548-04:00  INFO 50547 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:09:44.557-04:00  INFO 50547 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:09:44.636-04:00  INFO 50547 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:09:44.912-04:00  INFO 50547 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:09:44.950-04:00  INFO 50547 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:09:44.953-04:00  INFO 50547 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:09:45.072-04:00  INFO 50547 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:09:45.165-04:00  INFO 50547 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:09:45.373-04:00  INFO 50547 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:09:46.157-04:00  INFO 50547 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:09:46.244-04:00  INFO 50547 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:09:46.929-04:00  WARN 50547 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:09:47.385-04:00  INFO 50547 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:09:47.435-04:00  INFO 50547 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:09:47.453-04:00  INFO 50547 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 6.631 seconds (process running for 7.609)
+2023-07-20T16:09:49.934-04:00  INFO 50547 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:09:49.939-04:00  INFO 50547 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:09:49.944-04:00  INFO 50547 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T16:10:02.022-04:00  WARN 50547 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "customerId"]
+2023-07-20T16:10:07.569-04:00  WARN 50547 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "customerID"]
+2023-07-20T16:10:16.635-04:00  INFO 50547 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:10:17.016-04:00  WARN 50547 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:10:17.018-04:00  INFO 50547 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:10:17.148-04:00  INFO 50547 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:11:38.308-04:00  INFO 50570 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50570 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:11:38.317-04:00  INFO 50570 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:11:38.434-04:00  INFO 50570 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:11:38.434-04:00  INFO 50570 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:11:39.728-04:00  INFO 50570 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:11:39.781-04:00  INFO 50570 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:11:40.739-04:00  INFO 50570 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:11:40.750-04:00  INFO 50570 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:11:40.751-04:00  INFO 50570 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:11:40.819-04:00  INFO 50570 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:11:40.822-04:00  INFO 50570 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2386 ms
+2023-07-20T16:11:40.894-04:00  INFO 50570 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:11:41.005-04:00  INFO 50570 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:11:41.008-04:00  INFO 50570 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:11:41.023-04:00  INFO 50570 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:11:41.197-04:00  INFO 50570 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:11:41.282-04:00  INFO 50570 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:11:41.289-04:00  INFO 50570 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:11:41.394-04:00  INFO 50570 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:11:41.449-04:00  INFO 50570 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:11:41.599-04:00  INFO 50570 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:11:41.943-04:00  INFO 50570 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:11:41.994-04:00  INFO 50570 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:11:42.432-04:00  WARN 50570 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:11:42.712-04:00  INFO 50570 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:11:42.755-04:00  INFO 50570 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:11:42.769-04:00  INFO 50570 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.332 seconds (process running for 6.31)
+2023-07-20T16:11:43.115-04:00  INFO 50570 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:11:43.116-04:00  INFO 50570 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:11:43.118-04:00  INFO 50570 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-20T16:12:46.720-04:00  INFO 50570 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:12:47.070-04:00  WARN 50570 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:12:47.071-04:00  INFO 50570 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:12:47.201-04:00  INFO 50570 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:12:52.034-04:00  INFO 50581 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50581 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:12:52.038-04:00  INFO 50581 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:12:52.101-04:00  INFO 50581 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:12:52.102-04:00  INFO 50581 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:12:52.968-04:00  INFO 50581 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:12:53.019-04:00  INFO 50581 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:12:53.663-04:00  INFO 50581 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:12:53.671-04:00  INFO 50581 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:12:53.672-04:00  INFO 50581 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:12:53.724-04:00  INFO 50581 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:12:53.724-04:00  INFO 50581 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1622 ms
+2023-07-20T16:12:53.779-04:00  INFO 50581 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:12:53.844-04:00  INFO 50581 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:12:53.846-04:00  INFO 50581 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:12:53.860-04:00  INFO 50581 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:12:53.988-04:00  INFO 50581 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:12:54.028-04:00  INFO 50581 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:12:54.030-04:00  INFO 50581 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:12:54.097-04:00  INFO 50581 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:12:54.149-04:00  INFO 50581 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:12:54.272-04:00  INFO 50581 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:12:54.606-04:00  INFO 50581 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:12:54.655-04:00  INFO 50581 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:12:55.031-04:00  WARN 50581 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:12:55.361-04:00  INFO 50581 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:12:55.398-04:00  INFO 50581 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:12:55.440-04:00  INFO 50581 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.185 seconds (process running for 5.252)
+2023-07-20T16:13:00.260-04:00  INFO 50581 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:13:00.261-04:00  INFO 50581 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:13:00.268-04:00  INFO 50581 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-07-20T16:14:24.486-04:00  INFO 50581 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:14:24.870-04:00  WARN 50581 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:14:24.871-04:00  INFO 50581 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:14:25.003-04:00  INFO 50581 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:25:03.886-04:00  INFO 50745 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50745 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:25:03.892-04:00  INFO 50745 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:25:03.997-04:00  INFO 50745 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:25:03.997-04:00  INFO 50745 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:25:05.209-04:00  INFO 50745 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:25:05.297-04:00  INFO 50745 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:25:06.081-04:00  INFO 50745 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:25:06.093-04:00  INFO 50745 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:25:06.093-04:00  INFO 50745 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:25:06.158-04:00  INFO 50745 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:25:06.159-04:00  INFO 50745 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2159 ms
+2023-07-20T16:25:06.228-04:00  INFO 50745 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:25:06.327-04:00  INFO 50745 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:25:06.330-04:00  INFO 50745 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:25:06.346-04:00  INFO 50745 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:25:06.542-04:00  INFO 50745 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:25:06.582-04:00  INFO 50745 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:25:06.585-04:00  INFO 50745 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:25:06.668-04:00  INFO 50745 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:25:06.737-04:00  INFO 50745 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:25:06.904-04:00  INFO 50745 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:25:07.243-04:00  INFO 50745 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:25:07.299-04:00  INFO 50745 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:25:07.722-04:00  WARN 50745 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:25:08.107-04:00  INFO 50745 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:25:08.153-04:00  INFO 50745 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:25:08.171-04:00  INFO 50745 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.283 seconds (process running for 6.218)
+2023-07-20T16:25:14.876-04:00  INFO 50745 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:25:14.879-04:00  INFO 50745 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:25:14.884-04:00  INFO 50745 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-07-20T16:26:24.347-04:00  INFO 50745 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:26:24.722-04:00  WARN 50745 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:26:24.723-04:00  INFO 50745 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:26:24.855-04:00  INFO 50745 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:26:29.829-04:00  INFO 50757 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50757 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:26:29.844-04:00  INFO 50757 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:26:29.911-04:00  INFO 50757 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:26:29.911-04:00  INFO 50757 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:26:30.983-04:00  INFO 50757 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:26:31.067-04:00  INFO 50757 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:26:31.918-04:00  INFO 50757 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:26:31.925-04:00  INFO 50757 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:26:31.926-04:00  INFO 50757 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:26:31.974-04:00  INFO 50757 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:26:31.975-04:00  INFO 50757 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2063 ms
+2023-07-20T16:26:32.025-04:00  INFO 50757 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:26:32.083-04:00  INFO 50757 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:26:32.085-04:00  INFO 50757 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:26:32.107-04:00  INFO 50757 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:26:32.233-04:00  INFO 50757 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:26:32.270-04:00  INFO 50757 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:26:32.272-04:00  INFO 50757 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:26:32.331-04:00  INFO 50757 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:26:32.377-04:00  INFO 50757 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:26:32.506-04:00  INFO 50757 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:26:32.862-04:00  INFO 50757 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:26:32.918-04:00  INFO 50757 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:26:33.377-04:00  WARN 50757 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:26:33.660-04:00  INFO 50757 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:26:33.697-04:00  INFO 50757 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:26:33.716-04:00  INFO 50757 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.756 seconds (process running for 5.798)
+2023-07-20T16:27:11.727-04:00  INFO 50757 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:27:11.728-04:00  INFO 50757 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:27:11.732-04:00  INFO 50757 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-07-20T16:27:42.664-04:00  INFO 50757 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:27:43.026-04:00  WARN 50757 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:27:43.027-04:00  INFO 50757 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:27:43.150-04:00  INFO 50757 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T16:30:38.657-04:00  INFO 50826 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 50826 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T16:30:38.662-04:00  INFO 50826 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T16:30:38.770-04:00  INFO 50826 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T16:30:38.772-04:00  INFO 50826 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T16:30:40.029-04:00  INFO 50826 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T16:30:40.144-04:00  INFO 50826 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 2 JPA repository interfaces.
+2023-07-20T16:30:40.786-04:00  INFO 50826 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T16:30:40.795-04:00  INFO 50826 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T16:30:40.796-04:00  INFO 50826 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T16:30:40.845-04:00  INFO 50826 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T16:30:40.846-04:00  INFO 50826 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2073 ms
+2023-07-20T16:30:40.907-04:00  INFO 50826 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T16:30:40.968-04:00  INFO 50826 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T16:30:40.973-04:00  INFO 50826 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T16:30:40.988-04:00  INFO 50826 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T16:30:41.123-04:00  INFO 50826 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T16:30:41.152-04:00  INFO 50826 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T16:30:41.154-04:00  INFO 50826 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T16:30:41.225-04:00  INFO 50826 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:30:41.286-04:00  INFO 50826 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T16:30:41.424-04:00  INFO 50826 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T16:30:41.745-04:00  INFO 50826 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T16:30:41.798-04:00  INFO 50826 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:30:42.184-04:00  WARN 50826 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T16:30:42.532-04:00  INFO 50826 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T16:30:42.566-04:00  INFO 50826 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T16:30:42.578-04:00  INFO 50826 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.888 seconds (process running for 5.994)
+2023-07-20T16:30:49.122-04:00  INFO 50826 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T16:30:49.123-04:00  INFO 50826 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T16:30:49.127-04:00  INFO 50826 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-07-20T16:33:32.698-04:00  WARN 50826 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "customerId"]
+2023-07-20T16:33:44.799-04:00  WARN 50826 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "customerId=1"]
+2023-07-20T16:36:55.704-04:00  INFO 50826 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T16:36:56.077-04:00  WARN 50826 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T16:36:56.081-04:00  INFO 50826 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T16:36:56.202-04:00  INFO 50826 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T17:20:26.084-04:00  INFO 51090 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 51090 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T17:20:26.089-04:00  INFO 51090 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T17:20:26.220-04:00  INFO 51090 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T17:20:26.220-04:00  INFO 51090 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T17:20:27.366-04:00  INFO 51090 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T17:20:27.447-04:00  INFO 51090 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2023-07-20T17:20:28.218-04:00  INFO 51090 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T17:20:28.233-04:00  INFO 51090 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T17:20:28.234-04:00  INFO 51090 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T17:20:28.304-04:00  INFO 51090 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T17:20:28.304-04:00  INFO 51090 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2083 ms
+2023-07-20T17:20:28.369-04:00  INFO 51090 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T17:20:28.453-04:00  INFO 51090 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T17:20:28.457-04:00  INFO 51090 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T17:20:28.473-04:00  INFO 51090 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T17:20:28.643-04:00  INFO 51090 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T17:20:28.683-04:00  INFO 51090 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T17:20:28.686-04:00  INFO 51090 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T17:20:28.824-04:00  INFO 51090 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:20:28.894-04:00  INFO 51090 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T17:20:29.083-04:00  INFO 51090 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:20:29.507-04:00  INFO 51090 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T17:20:29.576-04:00  INFO 51090 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:20:30.002-04:00  WARN 51090 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T17:20:30.379-04:00  INFO 51090 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T17:20:30.422-04:00  INFO 51090 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T17:20:30.439-04:00  INFO 51090 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.012 seconds (process running for 6.181)
+2023-07-20T17:20:44.640-04:00  INFO 51090 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T17:20:44.642-04:00  INFO 51090 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T17:20:44.651-04:00  INFO 51090 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-07-20T17:20:57.342-04:00  INFO 51090 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:20:57.716-04:00  WARN 51090 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T17:20:57.717-04:00  INFO 51090 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T17:20:57.838-04:00  INFO 51090 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T17:25:53.768-04:00  INFO 51151 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 51151 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T17:25:53.771-04:00  INFO 51151 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T17:25:53.853-04:00  INFO 51151 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T17:25:53.853-04:00  INFO 51151 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T17:25:54.765-04:00  INFO 51151 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T17:25:54.844-04:00  INFO 51151 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2023-07-20T17:25:55.656-04:00  INFO 51151 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T17:25:55.672-04:00  INFO 51151 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T17:25:55.673-04:00  INFO 51151 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T17:25:55.743-04:00  INFO 51151 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T17:25:55.743-04:00  INFO 51151 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1889 ms
+2023-07-20T17:25:55.811-04:00  INFO 51151 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T17:25:55.903-04:00  INFO 51151 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T17:25:55.905-04:00  INFO 51151 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T17:25:55.932-04:00  INFO 51151 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T17:25:56.153-04:00  INFO 51151 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T17:25:56.210-04:00  INFO 51151 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T17:25:56.214-04:00  INFO 51151 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T17:25:56.301-04:00  INFO 51151 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:25:56.381-04:00  INFO 51151 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T17:25:56.559-04:00  INFO 51151 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:25:56.973-04:00  INFO 51151 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T17:25:57.037-04:00  INFO 51151 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:25:57.567-04:00  WARN 51151 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T17:25:58.149-04:00  INFO 51151 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T17:25:58.194-04:00  INFO 51151 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T17:25:58.212-04:00  INFO 51151 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.186 seconds (process running for 6.158)
+2023-07-20T17:26:54.734-04:00  INFO 51151 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T17:26:54.736-04:00  INFO 51151 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T17:26:54.742-04:00  INFO 51151 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-07-20T17:27:24.397-04:00  INFO 51151 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:27:24.779-04:00  WARN 51151 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T17:27:24.788-04:00  INFO 51151 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T17:27:24.913-04:00  INFO 51151 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T17:31:12.459-04:00  INFO 51185 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 51185 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T17:31:12.471-04:00  INFO 51185 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T17:31:12.576-04:00  INFO 51185 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T17:31:12.577-04:00  INFO 51185 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T17:31:13.572-04:00  INFO 51185 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T17:31:13.652-04:00  INFO 51185 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2023-07-20T17:31:14.596-04:00  INFO 51185 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T17:31:14.607-04:00  INFO 51185 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T17:31:14.607-04:00  INFO 51185 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T17:31:14.706-04:00  INFO 51185 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T17:31:14.707-04:00  INFO 51185 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2129 ms
+2023-07-20T17:31:14.782-04:00  INFO 51185 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T17:31:14.864-04:00  INFO 51185 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T17:31:14.866-04:00  INFO 51185 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T17:31:14.882-04:00  INFO 51185 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T17:31:15.025-04:00  INFO 51185 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T17:31:15.215-04:00  INFO 51185 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T17:31:15.219-04:00  INFO 51185 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T17:31:15.312-04:00  INFO 51185 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:31:15.387-04:00  INFO 51185 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T17:31:15.664-04:00  INFO 51185 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:31:16.005-04:00  INFO 51185 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T17:31:16.075-04:00  INFO 51185 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:31:16.548-04:00  WARN 51185 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T17:31:16.759-04:00  INFO 51185 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T17:31:16.916-04:00  INFO 51185 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T17:31:16.953-04:00  INFO 51185 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T17:31:16.974-04:00  INFO 51185 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 6.038 seconds (process running for 7.208)
+2023-07-20T17:31:27.104-04:00  INFO 51185 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T17:31:27.105-04:00  INFO 51185 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T17:31:27.114-04:00  INFO 51185 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-07-20T17:31:43.335-04:00  INFO 51185 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:31:43.726-04:00  WARN 51185 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T17:31:43.726-04:00  INFO 51185 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T17:31:43.865-04:00  INFO 51185 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T17:33:10.814-04:00  INFO 51233 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 51233 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T17:33:10.818-04:00  INFO 51233 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T17:33:10.892-04:00  INFO 51233 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T17:33:10.893-04:00  INFO 51233 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T17:33:11.736-04:00  INFO 51233 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T17:33:11.800-04:00  INFO 51233 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2023-07-20T17:33:12.468-04:00  INFO 51233 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T17:33:12.479-04:00  INFO 51233 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T17:33:12.479-04:00  INFO 51233 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T17:33:12.533-04:00  INFO 51233 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T17:33:12.534-04:00  INFO 51233 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2023-07-20T17:33:12.581-04:00  INFO 51233 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T17:33:12.643-04:00  INFO 51233 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T17:33:12.645-04:00  INFO 51233 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T17:33:12.662-04:00  INFO 51233 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T17:33:12.856-04:00  INFO 51233 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T17:33:12.886-04:00  INFO 51233 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T17:33:12.889-04:00  INFO 51233 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T17:33:12.952-04:00  INFO 51233 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:33:13.002-04:00  INFO 51233 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T17:33:13.133-04:00  INFO 51233 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:33:13.460-04:00  INFO 51233 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T17:33:13.563-04:00  INFO 51233 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:33:13.874-04:00  WARN 51233 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T17:33:14.128-04:00  INFO 51233 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T17:33:14.273-04:00  INFO 51233 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T17:33:14.307-04:00  INFO 51233 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T17:33:14.328-04:00  INFO 51233 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.205 seconds (process running for 5.191)
+2023-07-20T17:33:18.433-04:00  INFO 51233 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T17:33:18.434-04:00  INFO 51233 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T17:33:18.437-04:00  INFO 51233 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T17:35:00.227-04:00  INFO 51233 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:35:00.595-04:00  WARN 51233 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T17:35:00.597-04:00  INFO 51233 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T17:35:00.720-04:00  INFO 51233 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T17:35:08.860-04:00  INFO 51317 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 51317 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T17:35:08.863-04:00  INFO 51317 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T17:35:08.977-04:00  INFO 51317 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T17:35:08.978-04:00  INFO 51317 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T17:35:09.939-04:00  INFO 51317 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T17:35:10.015-04:00  INFO 51317 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2023-07-20T17:35:10.867-04:00  INFO 51317 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T17:35:10.884-04:00  INFO 51317 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T17:35:10.884-04:00  INFO 51317 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T17:35:10.957-04:00  INFO 51317 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T17:35:10.958-04:00  INFO 51317 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1979 ms
+2023-07-20T17:35:11.027-04:00  INFO 51317 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T17:35:11.135-04:00  INFO 51317 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T17:35:11.137-04:00  INFO 51317 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T17:35:11.158-04:00  INFO 51317 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T17:35:11.465-04:00  INFO 51317 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T17:35:11.539-04:00  INFO 51317 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T17:35:11.544-04:00  INFO 51317 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T17:35:11.647-04:00  INFO 51317 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:35:11.715-04:00  INFO 51317 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T17:35:11.897-04:00  INFO 51317 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:35:12.339-04:00  INFO 51317 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T17:35:12.440-04:00  INFO 51317 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:35:12.982-04:00  WARN 51317 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T17:35:13.130-04:00  INFO 51317 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T17:35:13.268-04:00  INFO 51317 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T17:35:13.315-04:00  INFO 51317 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T17:35:13.337-04:00  INFO 51317 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.329 seconds (process running for 6.607)
+2023-07-20T17:35:21.145-04:00  INFO 51317 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T17:35:21.146-04:00  INFO 51317 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T17:35:21.149-04:00  INFO 51317 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-20T17:37:03.430-04:00  INFO 51317 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:37:03.775-04:00  WARN 51317 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T17:37:03.776-04:00  INFO 51317 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T17:37:03.902-04:00  INFO 51317 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T17:37:12.097-04:00  INFO 51350 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 51350 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T17:37:12.100-04:00  INFO 51350 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T17:37:12.163-04:00  INFO 51350 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T17:37:12.164-04:00  INFO 51350 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T17:37:13.011-04:00  INFO 51350 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T17:37:13.102-04:00  INFO 51350 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2023-07-20T17:37:13.931-04:00  INFO 51350 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T17:37:13.943-04:00  INFO 51350 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T17:37:13.943-04:00  INFO 51350 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T17:37:14.005-04:00  INFO 51350 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T17:37:14.006-04:00  INFO 51350 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1841 ms
+2023-07-20T17:37:14.067-04:00  INFO 51350 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T17:37:14.150-04:00  INFO 51350 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T17:37:14.153-04:00  INFO 51350 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T17:37:14.175-04:00  INFO 51350 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T17:37:14.341-04:00  INFO 51350 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T17:37:14.370-04:00  INFO 51350 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T17:37:14.373-04:00  INFO 51350 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T17:37:14.454-04:00  INFO 51350 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:37:14.507-04:00  INFO 51350 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T17:37:14.642-04:00  INFO 51350 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T17:37:15.035-04:00  INFO 51350 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T17:37:15.104-04:00  INFO 51350 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:37:15.678-04:00  WARN 51350 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T17:37:15.878-04:00  INFO 51350 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T17:37:16.055-04:00  INFO 51350 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T17:37:16.100-04:00  INFO 51350 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T17:37:16.113-04:00  INFO 51350 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 4.772 seconds (process running for 5.616)
+2023-07-20T17:37:18.984-04:00  INFO 51350 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T17:37:19.377-04:00  WARN 51350 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T17:37:19.378-04:00  INFO 51350 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T17:37:19.500-04:00  INFO 51350 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
+2023-07-20T18:01:09.822-04:00  INFO 51496 --- [restartedMain] c.e.r.RewardsProjectApplication          : Starting RewardsProjectApplication using Java 17.0.7 with PID 51496 (/Users/shuhanshi/Desktop/rewardsProject/target/classes started by shuhanshi in /Users/shuhanshi/Desktop/rewardsProject)
+2023-07-20T18:01:09.840-04:00  INFO 51496 --- [restartedMain] c.e.r.RewardsProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-07-20T18:01:09.942-04:00  INFO 51496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-20T18:01:09.942-04:00  INFO 51496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-20T18:01:10.758-04:00  INFO 51496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-20T18:01:10.821-04:00  INFO 51496 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2023-07-20T18:01:11.608-04:00  INFO 51496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-20T18:01:11.621-04:00  INFO 51496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-20T18:01:11.621-04:00  INFO 51496 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-20T18:01:11.697-04:00  INFO 51496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-20T18:01:11.698-04:00  INFO 51496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1755 ms
+2023-07-20T18:01:11.772-04:00  INFO 51496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Starting...
+2023-07-20T18:01:11.868-04:00  INFO 51496 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : rewardsProject - Added connection conn0: url=jdbc:h2:mem:rewardsProject user=SA
+2023-07-20T18:01:11.871-04:00  INFO 51496 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Start completed.
+2023-07-20T18:01:11.892-04:00  INFO 51496 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:rewardsProject'
+2023-07-20T18:01:12.147-04:00  INFO 51496 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-20T18:01:12.196-04:00  INFO 51496 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-20T18:01:12.199-04:00  INFO 51496 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-20T18:01:12.314-04:00  INFO 51496 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T18:01:12.379-04:00  INFO 51496 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-20T18:01:12.555-04:00  INFO 51496 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-20T18:01:13.340-04:00  INFO 51496 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-20T18:01:13.433-04:00  INFO 51496 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T18:01:13.940-04:00  WARN 51496 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-20T18:01:14.213-04:00  INFO 51496 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-20T18:01:14.430-04:00  INFO 51496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-20T18:01:14.481-04:00  INFO 51496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-20T18:01:14.494-04:00  INFO 51496 --- [restartedMain] c.e.r.RewardsProjectApplication          : Started RewardsProjectApplication in 5.629 seconds (process running for 6.734)
+2023-07-20T18:01:19.835-04:00  INFO 51496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-20T18:01:19.836-04:00  INFO 51496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-20T18:01:19.846-04:00  INFO 51496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-07-20T18:08:02.138-04:00  INFO 51496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-20T18:08:02.460-04:00  WARN 51496 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-07-20T18:08:02.460-04:00  INFO 51496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown initiated...
+2023-07-20T18:08:02.589-04:00  INFO 51496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : rewardsProject - Shutdown completed.
